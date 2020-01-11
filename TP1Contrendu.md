@@ -16,7 +16,7 @@ Dans un première temps il a fallu créer la machine virtuelle. Nous avons pour 
 
 ​	Il a fallu se rendre dans l'url suivante : 
 
-[Debian]: ftp.lip6.fr/pub/linux/distributions/debian/
+[Debian]: ftp.lip6.fr/pub/linux/distributions/debian/	"ftp.lip6.fr/pub/linux/distributions/debian/"
 
 Ensuite pour l'image **mini.iso** se trouvais dans le chemin suivant:
 
@@ -114,7 +114,7 @@ dpkg -l | wc -l
 
 J'ai donc obtenue le résultat suivant :
 
-![](C:\Users\zenat\Documents\LP Projet Web\UNIXCours\dpkg.JPG)
+![Nb paquets](https://github.com/NaouelZ/UNIX/blob/master/dpkg.JPG)
 
 
 
@@ -132,4 +132,20 @@ df -h
 
  J'ai donc obtenue le résultat suivant : 
 
-![df](https://github.com/NaouelZ/UNIX/blob/master/df.JPG)
+![Espace utilisé](https://github.com/NaouelZ/UNIX/blob/master/df.JPG)
+
+
+
+### 	II.5 - Lister les partitions
+
+Nous avions du après vérifié la liste des partitions sur le disque dur de notre machine.
+
+Pour cela, il a fallu utilisé la commande suivante : 
+
+```
+fdisk l
+```
+
+J'ai obtenue le résultat suivant :
+
+![Partitions](https://github.com/NaouelZ/UNIX/blob/master/disk.JPG)
