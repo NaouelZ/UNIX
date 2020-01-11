@@ -132,4 +132,4 @@ df -h
 
  J'ai donc obtenue le résultat suivant : 
 
-![df](https://github.com/NaouelZ/UNIX/df.JPG)
+![df](https://github.com/NaouelZ/UNIX/blob/master/df.JPG)
