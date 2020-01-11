@@ -58,7 +58,7 @@ On vérifie si cela a bien été installé :
 apt search ssh
 ```
 
-Pour pouvoir changer la connexion root à distance avec mot de passe, il faut :
+Pour pouvoir changer la connexion root à distance avec mot de passe, il faut remplacer la ligne permis PermitRootLogin **prohibit-password** par **PermitRootLogin yes**. 
 
 ```
 
@@ -90,6 +90,20 @@ J'ai ensuite pinger sur celui-ci
 ping 134.157.46.189
 ```
 
+Puis lister tous les process, pour vérifié si cela a bien été fait : 
+
+```
+ps aux | grep ssh
+```
+
+Pour se connecter à ma machine virtuelle, il faut  utilisé la commande suivante ( sur le cmder ): 
+
+```
+ssh root@134.157.46.189
+```
+
+
+
 ### 	II.3 - Nombre de paquets
 
 ​	Nous devions ensuite vérifié la taille de notre paquet soit bien inférieur à 239 paquets pour cela nous avons utilisé la commande suivante :
@@ -100,3 +114,22 @@ dpkg -l | wc -l
 
 J'ai donc obtenue le résultat suivant :
 
+![](C:\Users\zenat\Documents\LP Projet Web\UNIXCours\dpkg.JPG)
+
+
+
+### 	II.4 - Espace utilisé
+
+Nous devions ensuite vérifié l'espace de stockage utilisé au niveau de la racine / .
+
+Celle-ci devez représenter 670 Mo au maximal. 
+
+Pour vérifié, cela il faut utilisé la commande suivante :
+
+```
+df -h
+```
+
+ J'ai donc obtenue le résultat suivant : 
+
+![df](https://github.com/NaouelZ/UNIX/df.JPG)
